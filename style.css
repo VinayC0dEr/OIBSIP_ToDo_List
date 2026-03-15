@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+    }
+    
+    body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    color:white;
+    }
+    
+    .app{
+    width:100%;
+    max-width:1500px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.25);
+    }
+    
+    header{
+    margin-bottom:30px;
+    }
+    
+    header h1{
+    margin-bottom:15px;
+    font-weight:600;
+    }
+    
+    .task-input{
+    display:grid;
+    grid-template-columns:1fr 2fr auto;
+    gap:10px;
+    }
+    
+    .task-input input,
+    .task-input textarea{
+    padding:10px;
+    border-radius:8px;
+    border:none;
+    outline:none;
+    font-size:14px;
+    }
+    
+    .task-input textarea{
+    resize:none;
+    }
+    
+    .task-input button{
+    background:#00e676;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    }
+    
+    .columns{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    }
+    
+    .column{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:15px;
+    }
+    
+    .column h2{
+    margin-bottom:15px;
+    }
+    
+    .task{
+    background:white;
+    color:black;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:12px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    }
+    
+    .task-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    }
+    
+    .task-title{
+    font-weight:600;
+    }
+    
+    .task-desc{
+    font-size:13px;
+    opacity:0.8;
+    }
+    
+    .task-buttons{
+    display:flex;
+    gap:6px;
+    }
+    
+    .task-buttons button{
+    border:none;
+    padding:5px 8px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:12px;
+    }
+    
+    .complete{background:#00e676;}
+    .edit{background:#ffd54f;}
+    .delete{background:#ff5252;color:white;}
+    
+    .time{
+    font-size:11px;
+    opacity:0.6;
+    }
+    
+    .completed{
+    opacity:0.6;
+    text-decoration:line-through;
+    }
+    
+    @media(max-width:900px){
+    
+    .columns{
+    grid-template-columns:1fr;
+    }
+    
+    .task-input{
+    grid-template-columns:1fr;
+    }
+    
+    }

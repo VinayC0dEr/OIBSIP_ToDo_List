@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Manager</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header>
+
+<h1>Task Manager</h1>
+
+<div class="task-input">
+<input id="titleInput" placeholder="Task Title">
+<textarea id="descInput" rows="1" placeholder="Task Description"></textarea>
+<button onclick="addTask()">Add Task</button>
+</div>
+
+</header>
+
+
+<div class="columns">
+
+<div class="column">
+<h2>Pending Tasks</h2>
+<div id="pending"></div>
+</div>
+
+<div class="column">
+<h2>Completed Tasks</h2>
+<div id="completed"></div>
+</div>
+
+</div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
